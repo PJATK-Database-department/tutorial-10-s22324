@@ -68,6 +68,8 @@ namespace MvcMovie.Controllers
         //    return "From [HttpPost]Index: filter on " + searchString;
         //}
 
+
+
         // GET: Movies/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -158,6 +160,11 @@ namespace MvcMovie.Controllers
             }
             return View(movie);
         }
+
+        // POST: Movies/Delete/6
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Delete(int id, bool notUsed)
 
         // GET: Movies/Delete/5
         public async Task<IActionResult> Delete(int? id)
